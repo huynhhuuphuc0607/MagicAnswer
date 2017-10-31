@@ -32,7 +32,7 @@ public class ShakeDetector implements SensorEventListener {
             float y = sensorEvent.values[1];
             float z = sensorEvent.values[2];
 
-            //neutralize the effect of gravity (subtract it out from each value)
+            //neutralize the effect of gravity by subtracting it out from each value
             float gForceX = x - SensorManager.GRAVITY_EARTH;
             float gForceY = y - SensorManager.GRAVITY_EARTH;
             float gForceZ = z - SensorManager.GRAVITY_EARTH;
